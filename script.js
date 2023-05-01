@@ -34,10 +34,12 @@ console.log(getBooksByAuthor(books))
 // to the library, ensuring that the new book has all required properties (title, author,
 // publicationYear, and isAvailable).
 const addNewBook = (book) => {
-    this.book = book
-    const  {title = 'Born A Crime', author='Trevor Noah', publicationYear= 2025, isAvailable = true} = book
-    {title, author, publicationYear, isAvailable}
-    return books.push(book)
+    Object.defineProperties(book,{
+         title: 'Born A Crime', 
+         author: 'Trevor Noah', 
+         publicationYear: 2025, 
+         isAvailable: true
+    })
 }
 console.log(addNewBook(books))
 // Create a function checkoutBook that takes a book title as an argument and changes
