@@ -33,15 +33,15 @@ console.log(getBooksByAuthor(books))
 // Create a functon addNewBook that takes a book object as an argument and adds it
 // to the library, ensuring that the new book has all required properties (title, author,
 // publicationYear, and isAvailable).
-const addNewBook = (book) => {
-    Object.defineProperties(book,{
-         title: 'Born A Crime', 
-         author: 'Trevor Noah', 
-         publicationYear: 2025, 
-         isAvailable: true
-    })
-}
-console.log(addNewBook(books))
+// const addNewBook = (books) => {
+//     Object.defineProperties(books, {
+//          title: 'Born A Crime', 
+//          author: 'Trevor Noah', 
+//          publicationYear: 2025, 
+//          isAvailable: true
+//     })
+// }
+// console.log(addNewBook(books))
 // Create a function checkoutBook that takes a book title as an argument and changes
 // the book's isAvailable property to false. If the book is not found in the library, the
 // function should return a message indicating that the book is not available.
