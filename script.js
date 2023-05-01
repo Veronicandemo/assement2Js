@@ -1,0 +1,71 @@
+'use strict'
+const books = [
+{ title: 'The Catcher in the Rye', author: 'J.D. Salinger', publicationYear: 1951,
+isAvailable: true },
+{ title: 'Great Expectations', author: 'Charles Dickens', publicationYear: 1861,
+isAvailable: false },
+{ title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', publicationYear:
+1866, isAvailable: true },
+{ title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', publicationYear: 1925,
+isAvailable: false },
+{ title: 'The Odyssey', author: 'Homer', publicationYear: -800, isAvailable: true },
+];
+// Write a JavaScript program that performs the following tasks:
+// 1. Create a function called getAvailableBooks that returns an array of all available
+// books.
+// console.log(books)
+const getAvailableBooks = (booksArr) => {
+    booksArr.map( book => {
+       return book
+    })
+    return booksArr
+}
+
+console.log(getAvailableBooks(books))
+// Create a function getBooksByAuthor that takes an author's name as an argument and
+// returns an array of all books by that author.
+const getBooksByAuthor = (booksAuthor) => {
+    if(booksAuthor.author = books.author){
+        return books.values()
+    }
+}
+console.log(getBooksByAuthor(books))
+// Create a functon addNewBook that takes a book object as an argument and adds it
+// to the library, ensuring that the new book has all required properties (title, author,
+// publicationYear, and isAvailable).
+const addNewBook = (book) => {
+    this.book = book
+    const  {title = 'Born A Crime', author='Trevor Noah', publicationYear= 2025, isAvailable = true} = book
+    {title, author, publicationYear, isAvailable}
+    return books.push(book)
+}
+console.log(addNewBook(books))
+// Create a function checkoutBook that takes a book title as an argument and changes
+// the book's isAvailable property to false. If the book is not found in the library, the
+// function should return a message indicating that the book is not available.
+const checkoutBook = (bookstitle) => {
+    this.title = bookstitle
+    if(bookstitle == true){
+       return isAvailable = false
+    }
+    else{
+        console.log(`${this.book} is not available`)
+    } 
+}
+console.log(checkoutBook(books))
+// console.log(books)
+
+// Create a function returnBook that takes a book title as an argument and changes the
+// book's isAvailable property to true. If the book is not found in the library, the function
+// should return a message indicating that the book does not belong to the library.
+
+const returnBook = (bookstitle) => {
+    this.title = bookstitle
+   if(bookstitle === bookstitle.title){
+    books.isAvailable = true
+   }
+   else{
+    console.log(`The ${this.book} does not belong to the array`)
+   }
+}
+console.log(returnBook(books))
